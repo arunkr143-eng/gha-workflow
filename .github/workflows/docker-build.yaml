@@ -1,4 +1,5 @@
 name: Build and push docker image
+
 on:
   Push:
     branches:
@@ -7,6 +8,7 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
+
     stpes:
       - name: checkout code
         uses: actions/checkout@v4
